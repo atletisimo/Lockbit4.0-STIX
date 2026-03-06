@@ -11,9 +11,12 @@
 
 # Data model
 Моделот е имплементиран преку STIX Domain Objects (SDO) и Relationship Objects (SRO).
+
 ## Identity SDO
 Во моделот е дефиниран Identity објект кој ја претставува жртвата на нападот – Critical Infrastructure Organization – Albania.
+
 Овој објект е моделиран со користење на  STIX Domain Objects (SDO’s), што овозможува формално идентификување на организацијата и нејзиниот сектор (critical-infrastructure).
+
 Identity објектот се користи и како централна референтна точка во моделот бидејќи:
 
 •	Threat Actor ја таргетира организацијата
@@ -40,7 +43,7 @@ Threat Actor објектот ги претставува LockBit ransomware ope
 Malware објектот го претставува LockBit 4.0 ransomware .
 
 Во моделот постои релација:
-## Malware → uses → Attack Pattern
+### Malware → uses → Attack Pattern
 
 односно користи техники како PowerShell execution и DLL injection.
 
@@ -76,12 +79,15 @@ MITRE ID: T1055.001
 ## Indicators
 Indicator објектите претставуваат Indicators of Compromise (IOC).
 Во моделот се користат SHA-256 hash вредности за:
+
 •	PowerShell скрипти
+
 •	extracted malware фајлови
+
 •	DLL компоненти
 
 Во моделот постојат овие релации:
-## Indicator → indicates → Malware
+### Indicator → indicates → Malware
 
 што значи дека тие можат да се користат за детекција на LockBit malware во системите.
 
@@ -91,22 +97,22 @@ Indicator објектите претставуваат Indicators of Compromise
 ## Релации:
 uses, targets, attributed-to и indicates 
 
-## Threat Actor uses Malware
+### Threat Actor uses Malware
 •	LockBit Ransomware Operators uses LockBit 4.0
-## Malware uses Attack Pattern
+### Malware uses Attack Pattern
 •	LockBit 4.0 uses PowerShell Execution
 
 •	LockBit 4.0 uses DLL Injection
-## Indicator indicates Malware
+### Indicator indicates Malware
 •	LockBit PS1 File Hash indicates LockBit 4.0
 
 •	LockBit Extracted PS1 Hash indicates LockBit 4.0
 
 •	LockBit DLL Decompress Hash indicates LockBit 4.0
-## Threat Actor targets Identity
+### Threat Actor targets Identity
 •	LockBit Ransomware Operators targets Critical Infrastructure Organization - Albania
-## Campaign targets Identity
+### Campaign targets Identity
 •	LockBit 4.0 Albanian Infrastructure Campaign targets Critical Infrastructure Organization - Albania
-## Campaign attributed-to Threat Actor
+### Campaign attributed-to Threat Actor
 •	LockBit 4.0 Albanian Infrastructure Campaign attributed-to LockBit Ransomware Operators
 
