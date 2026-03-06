@@ -30,8 +30,8 @@ Threat Actor објектот ги претставува LockBit ransomware ope
 •	Resource level: team
 
 Во моделот постои релација:
-### Threat Actor → uses → Malware
-### Threat Actor → targets → Identity
+## Threat Actor → uses → Malware
+## Threat Actor → targets → Identity
 
 што покажува дека напаѓачот го користи LockBit malware и ја таргетира критичната инфраструктура.
 
@@ -40,7 +40,7 @@ Threat Actor објектот ги претставува LockBit ransomware ope
 Malware објектот го претставува LockBit 4.0 ransomware .
 
 Во моделот постои релација:
-### Malware → uses → Attack Pattern
+## Malware → uses → Attack Pattern
 
 односно користи техники како PowerShell execution и DLL injection.
 
@@ -60,23 +60,28 @@ LockBit 4.0 Albanian Infrastructure Campaign
 Attack Pattern објектите ги претставуваат техниките на напад, мапирани со MITRE ATT&CK.
 
 Во моделот се вклучени:
-    1. PowerShell Execution
+
+1.	PowerShell Execution
 MITRE ID: T1059.001
-    2. DLL Injection
+
+2.	DLL Injection
 MITRE ID: T1055.001
+
 Овие техники се користат од LockBit malware за:
-    • извршување на злонамерен код
-    • bypass на безбедносни механизми
-    • инјектирање код во легитимни процеси.
+•	извршување на злонамерен код
+•	bypass на безбедносни механизми
+•	инјектирање код во легитимни процеси.
+
     
 ## Indicators
 Indicator објектите претставуваат Indicators of Compromise (IOC).
 Во моделот се користат SHA-256 hash вредности за:
-    • PowerShell скрипти
-    • extracted malware фајлови
-    • DLL компоненти
+•	PowerShell скрипти
+•	extracted malware фајлови
+•	DLL компоненти
+
 Во моделот постојат овие релации:
-Indicator → indicates → Malware
+## Indicator → indicates → Malware
 
 што значи дека тие можат да се користат за детекција на LockBit malware во системите.
 
@@ -86,22 +91,22 @@ Indicator → indicates → Malware
 ## Релации:
 uses, targets, attributed-to и indicates 
 
-### Threat Actor uses Malware
+## Threat Actor uses Malware
 •	LockBit Ransomware Operators uses LockBit 4.0
-### Malware uses Attack Pattern
+## Malware uses Attack Pattern
 •	LockBit 4.0 uses PowerShell Execution
 
 •	LockBit 4.0 uses DLL Injection
-### Indicator indicates Malware
+## Indicator indicates Malware
 •	LockBit PS1 File Hash indicates LockBit 4.0
 
 •	LockBit Extracted PS1 Hash indicates LockBit 4.0
 
 •	LockBit DLL Decompress Hash indicates LockBit 4.0
-### Threat Actor targets Identity
+## Threat Actor targets Identity
 •	LockBit Ransomware Operators targets Critical Infrastructure Organization - Albania
-### Campaign targets Identity
+## Campaign targets Identity
 •	LockBit 4.0 Albanian Infrastructure Campaign targets Critical Infrastructure Organization - Albania
-### Campaign attributed-to Threat Actor
+## Campaign attributed-to Threat Actor
 •	LockBit 4.0 Albanian Infrastructure Campaign attributed-to LockBit Ransomware Operators
 
