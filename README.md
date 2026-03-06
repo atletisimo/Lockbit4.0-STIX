@@ -3,11 +3,13 @@
 
 Scenario
 Ова сценарио претставува координирана ransomware кампања насочена кон критичната инфраструктура во Албанија.
+
 Целта е финансиска добивка преку брзо криптирање на фајлови и примена на техника на двојна изнуда (double extortion),.
 
 Сценариото го илустрира целосното поврзување на објектите Identity, Threat Actor, Malware, Campaign, Attack Patterns и Indicators.
 Data model
-За структурирано претставување на сценариото е искористен STIX 2.1 (Structured Threat Information Expression) моделот. Моделот е имплементиран преку STIX Domain Objects (SDO) и Relationship Objects (SRO).
+За структурирано претставување на сценариото е искористен STIX 2.1 (Structured Threat Information Expression) моделот. 
+Моделот е имплементиран преку STIX Domain Objects (SDO) и Relationship Objects (SRO).
 Identity SDO
 Во моделот е дефиниран Identity објект кој ја претставува жртвата на нападот – Critical Infrastructure Organization – Albania.
 Овој објект е моделиран со користење на  STIX Domain Objects (SDO’s), што овозможува формално идентификување на организацијата и нејзиниот сектор (critical-infrastructure).
