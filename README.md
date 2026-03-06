@@ -32,7 +32,7 @@ Threat Actor објектот ги претставува LockBit ransomware ope
 
 •	Resource level: team
 
-Во моделот постои релација:
+Во моделот постојат овие релации:
 ### Threat Actor → uses → Malware
 ### Threat Actor → targets → Identity
 
@@ -89,10 +89,10 @@ Indicator објектите претставуваат Indicators of Compromise
 
 •	DLL компоненти
 
-Во моделот постојат овие релации:
+Во моделот постои релација:
 ### Indicator → indicates → Malware
 
-што значи дека можат да се користат за детекција на LockBit malware во системите.
+ за детекција на LockBit malware во системите.
 
 ### Со STIX Relationship Objects (SRO) се прикажани логичките врски помеѓу главните објекти на нападот.
 Релациите uses, targets, attributed-to и indicates овозможуваат структурирано претставување на односите помеѓу: Identity, threat-actor, campaign,  malware, attack-pattern 
