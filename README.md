@@ -76,3 +76,19 @@ Indicator → indicates → Malware
 ## Релации:
 uses, targets, attributed-to и indicates 
 
+### Threat Actor uses Malware
+•	LockBit Ransomware Operators uses LockBit 4.0
+### Malware uses Attack Pattern
+•	LockBit 4.0 uses PowerShell Execution
+•	LockBit 4.0 uses DLL Injection
+### Indicator indicates Malware
+•	LockBit PS1 File Hash indicates LockBit 4.0
+•	LockBit Extracted PS1 Hash indicates LockBit 4.0
+•	LockBit DLL Decompress Hash indicates LockBit 4.0
+### Threat Actor targets Identity
+•	LockBit Ransomware Operators targets Critical Infrastructure Organization - Albania
+### Campaign targets Identity
+•	LockBit 4.0 Albanian Infrastructure Campaign targets Critical Infrastructure Organization - Albania
+### Campaign attributed-to Threat Actor
+•	LockBit 4.0 Albanian Infrastructure Campaign attributed-to LockBit Ransomware Operators
+
