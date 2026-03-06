@@ -33,8 +33,8 @@ Threat Actor објектот ги претставува LockBit ransomware ope
 •	Resource level: team
 
 Во моделот постои релација:
-## Threat Actor → uses → Malware
-## Threat Actor → targets → Identity
+### Threat Actor → uses → Malware
+### Threat Actor → targets → Identity
 
 што покажува дека напаѓачот го користи LockBit malware и ја таргетира критичната инфраструктура.
 
