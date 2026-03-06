@@ -6,7 +6,7 @@
 
 Целта е финансиска добивка преку брзо криптирање на фајлови и примена на техника на двојна изнуда (double extortion),
 
-Сценариото го илустрира целосното поврзување на објектите Identity, Threat Actor, Malware, Campaign, Attack Pattern и Indicator.
+Сценариото илустрира поврзување на објектите: Identity, Threat Actor, Malware, Campaign, Attack Pattern и Indicator.
 
 
 # Data model
