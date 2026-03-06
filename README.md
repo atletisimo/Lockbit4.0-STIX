@@ -10,41 +10,51 @@
 
 
 # Data model
-За структурирано претставување на сценариото е искористен STIX 2.1 (Structured Threat Information Expression) моделот. 
 Моделот е имплементиран преку STIX Domain Objects (SDO) и Relationship Objects (SRO).
 ## Identity SDO
 Во моделот е дефиниран Identity објект кој ја претставува жртвата на нападот – Critical Infrastructure Organization – Albania.
 Овој објект е моделиран со користење на  STIX Domain Objects (SDO’s), што овозможува формално идентификување на организацијата и нејзиниот сектор (critical-infrastructure).
 Identity објектот се користи и како централна референтна точка во моделот бидејќи:
-    • Threat Actor ја таргетира организацијата
-    • Campaign исто така ја таргетира истата инфраструктура
+
+•	Threat Actor ја таргетира организацијата
+
+•	Campaign исто така ја таргетира истата инфраструктура
+
     
 ## Threat Actor SDO
 Threat Actor објектот ги претставува LockBit ransomware operators, кои имаат:
-    • Primary motivation: financial
-    • Sophistication: advanced
-    • Resource level: team
+•	Primary motivation: financial
+
+•	Sophistication: advanced
+
+•	Resource level: team
+
 Во моделот постои релација:
-Threat Actor → uses → Malware
-Threat Actor → targets → Identity
+### Threat Actor → uses → Malware
+### Threat Actor → targets → Identity
 
 што покажува дека напаѓачот го користи LockBit malware и ја таргетира критичната инфраструктура.
 
+
 ## Malware SDO
 Malware објектот го претставува LockBit 4.0 ransomware .
+
 Во моделот постои релација:
-Malware → uses → Attack Pattern
+### Malware → uses → Attack Pattern
 
 односно користи техники како PowerShell execution и DLL injection.
 
 ## Campaign SDO
 Campaign објектот ја претставува конкретната операција:
 LockBit 4.0 Albanian Infrastructure Campaign
-Во моделот постојат овие релации:
-Campaign → attributed-to → Threat Actor
-Campaign → targets → Identity
 
-што значи дека кампањата е поврзана со LockBit operators и е насочена кон критична инфраструктура.
+Во моделот постојат овие релации:
+### Campaign → attributed-to → Threat Actor
+
+### Campaign → targets → Identity
+
+
+што значи дека campaign е поврзан со LockBit operators и е насочен кон критичната инфраструктура.
 
 ## Attack Patterns
 Attack Pattern објектите ги претставуваат техниките на напад, мапирани со MITRE ATT&CK.
