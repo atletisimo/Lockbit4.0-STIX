@@ -59,7 +59,7 @@ LockBit 4.0 Albanian Infrastructure Campaign
 
 што значи дека campaign е поврзан со LockBit operators и е насочен кон критичната инфраструктура.
 
-## Attack Patterns
+## Attack Pattern
 Attack Pattern објектите ги претставуваат техниките на напад, мапирани со MITRE ATT&CK.
 
 Во моделот се вклучени:
@@ -71,12 +71,15 @@ MITRE ID: T1059.001
 MITRE ID: T1055.001
 
 Овие техники се користат од LockBit malware за:
+
 •	извршување на злонамерен код
+
 •	bypass на безбедносни механизми
+
 •	инјектирање код во легитимни процеси.
 
     
-## Indicators
+## Indicator
 Indicator објектите претставуваат Indicators of Compromise (IOC).
 Во моделот се користат SHA-256 hash вредности за:
 
@@ -89,7 +92,7 @@ Indicator објектите претставуваат Indicators of Compromise
 Во моделот постојат овие релации:
 ### Indicator → indicates → Malware
 
-што значи дека тие можат да се користат за детекција на LockBit malware во системите.
+што значи дека можат да се користат за детекција на LockBit malware во системите.
 
 ### Со STIX Relationship Objects (SRO) се прикажани логичките врски помеѓу главните објекти на нападот.
 Релациите uses, targets, attributed-to и indicates овозможуваат структурирано претставување на односите помеѓу: Identity, threat-actor, campaign,  malware, attack-pattern 
