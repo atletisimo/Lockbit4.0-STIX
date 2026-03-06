@@ -9,7 +9,7 @@
 Сценариото го илустрира целосното поврзување на објектите Identity, Threat Actor, Malware, Campaign, Attack Patterns и Indicators.
 
 
-# Data model
+## Data model
 За структурирано претставување на сценариото е искористен STIX 2.1 (Structured Threat Information Expression) моделот. 
 Моделот е имплементиран преку STIX Domain Objects (SDO) и Relationship Objects (SRO).
 # Identity SDO
