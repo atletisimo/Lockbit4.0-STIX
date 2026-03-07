@@ -95,7 +95,7 @@ Indicator објектите претставуваат Indicators of Compromise
  за детекција на LockBit malware во системите.
 
 ### Со STIX Relationship Objects (SRO) се прикажани логичките врски помеѓу главните објекти на нападот.
-Релациите uses, targets, attributed-to и indicates овозможуваат структурирано претставување на односите помеѓу: Identity, threat-actor, campaign,  malware, attack-pattern 
+Релациите uses, targets, attributed-to и indicates овозможуваат структурирано претставување на односите помеѓу: Identity, threat-actor, campaign,indicator, malware, attack-pattern 
 
 ## Релации:
 uses, targets, attributed-to и indicates 
